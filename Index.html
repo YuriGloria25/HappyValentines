@@ -1,0 +1,103 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Valentine's Day ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff4e88, #ff9ecf);
+  overflow: hidden;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 40px;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  max-width: 500px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.heart {
+  font-size: 2.5rem;
+  animation: heartbeat 1.2s infinite;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background: white;
+  color: #ff4e88;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #ffe3f0;
+  transform: scale(1.05);
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.2); }
+  40% { transform: scale(1); }
+  60% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Happy Valentine's Day 💖</h1>
+    <h2>I hope you enjoy this gift, Queensley</h2>
+    <p>
+      I hope you take care of yourself and please enjoy your day with this wonderful gift. I always care about you. Take care 🩷<br><br>
+      Sincerely,<br>
+      Yuri
+    </p>
+    <div class="heart">❤️</div>
+    <br><br>
+    <button onclick="showMessage()">Click for a Surprise</button>
+  </div>  <script>
+    function showMessage() {
+      alert("Happy Valentine's Day ❤️");
+    }
+  </script></body>
+  </html>
